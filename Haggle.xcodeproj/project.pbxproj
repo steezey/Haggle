@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA29BE1F1A44E02A003B55D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE1E1A44E02A003B55D9 /* AppDelegate.swift */; };
+		BA29BE211A44E02A003B55D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE201A44E02A003B55D9 /* ViewController.swift */; };
+		BA29BE241A44E02A003B55D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE221A44E02A003B55D9 /* Main.storyboard */; };
+		BA29BE261A44E02A003B55D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE251A44E02A003B55D9 /* Images.xcassets */; };
+		BA29BE291A44E02A003B55D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE271A44E02A003B55D9 /* LaunchScreen.xib */; };
+		BA29BE351A44E02A003B55D9 /* HaggleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE341A44E02A003B55D9 /* HaggleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA29BE2F1A44E02A003B55D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA29BE111A44E02A003B55D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA29BE181A44E02A003B55D9;
+			remoteInfo = Haggle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA29BE191A44E02A003B55D9 /* Haggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA29BE1D1A44E02A003B55D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA29BE1E1A44E02A003B55D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA29BE201A44E02A003B55D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA29BE231A44E02A003B55D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA29BE251A44E02A003B55D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BA29BE281A44E02A003B55D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BA29BE2E1A44E02A003B55D9 /* HaggleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaggleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA29BE331A44E02A003B55D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA29BE341A44E02A003B55D9 /* HaggleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaggleTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA29BE161A44E02A003B55D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA29BE2B1A44E02A003B55D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA29BE101A44E02A003B55D9 = {
+			isa = PBXGroup;
+			children = (
+				BA29BE1B1A44E02A003B55D9 /* Haggle */,
+				BA29BE311A44E02A003B55D9 /* HaggleTests */,
+				BA29BE1A1A44E02A003B55D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA29BE1A1A44E02A003B55D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA29BE191A44E02A003B55D9 /* Haggle.app */,
+				BA29BE2E1A44E02A003B55D9 /* HaggleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA29BE1B1A44E02A003B55D9 /* Haggle */ = {
+			isa = PBXGroup;
+			children = (
+				BA29BE1E1A44E02A003B55D9 /* AppDelegate.swift */,
+				BA29BE201A44E02A003B55D9 /* ViewController.swift */,
+				BA29BE221A44E02A003B55D9 /* Main.storyboard */,
+				BA29BE251A44E02A003B55D9 /* Images.xcassets */,
+				BA29BE271A44E02A003B55D9 /* LaunchScreen.xib */,
+				BA29BE1C1A44E02A003B55D9 /* Supporting Files */,
+			);
+			path = Haggle;
+			sourceTree = "<group>";
+		};
+		BA29BE1C1A44E02A003B55D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA29BE1D1A44E02A003B55D9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA29BE311A44E02A003B55D9 /* HaggleTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA29BE341A44E02A003B55D9 /* HaggleTests.swift */,
+				BA29BE321A44E02A003B55D9 /* Supporting Files */,
+			);
+			path = HaggleTests;
+			sourceTree = "<group>";
+		};
+		BA29BE321A44E02A003B55D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA29BE331A44E02A003B55D9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA29BE181A44E02A003B55D9 /* Haggle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA29BE381A44E02A003B55D9 /* Build configuration list for PBXNativeTarget "Haggle" */;
+			buildPhases = (
+				BA29BE151A44E02A003B55D9 /* Sources */,
+				BA29BE161A44E02A003B55D9 /* Frameworks */,
+				BA29BE171A44E02A003B55D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Haggle;
+			productName = Haggle;
+			productReference = BA29BE191A44E02A003B55D9 /* Haggle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA29BE2D1A44E02A003B55D9 /* HaggleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA29BE3B1A44E02A003B55D9 /* Build configuration list for PBXNativeTarget "HaggleTests" */;
+			buildPhases = (
+				BA29BE2A1A44E02A003B55D9 /* Sources */,
+				BA29BE2B1A44E02A003B55D9 /* Frameworks */,
+				BA29BE2C1A44E02A003B55D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA29BE301A44E02A003B55D9 /* PBXTargetDependency */,
+			);
+			name = HaggleTests;
+			productName = HaggleTests;
+			productReference = BA29BE2E1A44E02A003B55D9 /* HaggleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA29BE111A44E02A003B55D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Caffio;
+				TargetAttributes = {
+					BA29BE181A44E02A003B55D9 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					BA29BE2D1A44E02A003B55D9 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = BA29BE181A44E02A003B55D9;
+					};
+				};
+			};
+			buildConfigurationList = BA29BE141A44E02A003B55D9 /* Build configuration list for PBXProject "Haggle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA29BE101A44E02A003B55D9;
+			productRefGroup = BA29BE1A1A44E02A003B55D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA29BE181A44E02A003B55D9 /* Haggle */,
+				BA29BE2D1A44E02A003B55D9 /* HaggleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA29BE171A44E02A003B55D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA29BE241A44E02A003B55D9 /* Main.storyboard in Resources */,
+				BA29BE291A44E02A003B55D9 /* LaunchScreen.xib in Resources */,
+				BA29BE261A44E02A003B55D9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA29BE2C1A44E02A003B55D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA29BE151A44E02A003B55D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA29BE211A44E02A003B55D9 /* ViewController.swift in Sources */,
+				BA29BE1F1A44E02A003B55D9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA29BE2A1A44E02A003B55D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA29BE351A44E02A003B55D9 /* HaggleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA29BE301A44E02A003B55D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA29BE181A44E02A003B55D9 /* Haggle */;
+			targetProxy = BA29BE2F1A44E02A003B55D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA29BE221A44E02A003B55D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA29BE231A44E02A003B55D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA29BE271A44E02A003B55D9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA29BE281A44E02A003B55D9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA29BE361A44E02A003B55D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA29BE371A44E02A003B55D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA29BE391A44E02A003B55D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Haggle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA29BE3A1A44E02A003B55D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Haggle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BA29BE3C1A44E02A003B55D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HaggleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Haggle.app/Haggle";
+			};
+			name = Debug;
+		};
+		BA29BE3D1A44E02A003B55D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HaggleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Haggle.app/Haggle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA29BE141A44E02A003B55D9 /* Build configuration list for PBXProject "Haggle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA29BE361A44E02A003B55D9 /* Debug */,
+				BA29BE371A44E02A003B55D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA29BE381A44E02A003B55D9 /* Build configuration list for PBXNativeTarget "Haggle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA29BE391A44E02A003B55D9 /* Debug */,
+				BA29BE3A1A44E02A003B55D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA29BE3B1A44E02A003B55D9 /* Build configuration list for PBXNativeTarget "HaggleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA29BE3C1A44E02A003B55D9 /* Debug */,
+				BA29BE3D1A44E02A003B55D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA29BE111A44E02A003B55D9 /* Project object */;
+}
