@@ -88,7 +88,7 @@ class EntryCell: UITableViewCell {
         if card != nil {
             card.removeFromSuperview()
         } else {
-            /* BACKGROUND COLOR */
+        /* BACKGROUND COLOR */
             self.backgroundColor = UIColor.clearColor()
             self.selectionStyle = UITableViewCellSelectionStyle.None
         }
@@ -108,7 +108,7 @@ class EntryCell: UITableViewCell {
         card.addSubview(sourceLabel)
         
         /* CARD FLARE */
-        let flare = UIView(frame: CGRectMake(20, 0, 100, 10))
+        let flare = UIView(frame: CGRectMake(8, 0, 50, 5))
         flare.backgroundColor = UIColor(rgba: "#" + color)
         card.addSubview(flare)
         

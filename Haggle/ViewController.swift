@@ -26,8 +26,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        prepareLoading()
-        loadData()
+        loadData(true)
         render()
     }
     
@@ -89,8 +88,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         entriesTable.addSubview(refreshControl)
     }
     
-    func refresh(sender:AnyObject) {
-        loadData()
+    func refresh(sender: UIRefreshControl) {
+        loadData(false)
+        sender.endRefreshing()
     }
     
     /*
@@ -132,29 +132,29 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     |--------------------------------------------------------------------------
     */
     
-    var loadingView = UIAlertView()
-    func prepareLoading() {
-        loadingView = UIAlertView(title: "Loading Data...", message: "", delegate: nil, cancelButtonTitle: nil)
-    }
+    var loadingController = UIAlertController(title: "Loading Data...", message: "", preferredStyle: UIAlertControllerStyle.Alert)
     func showLoading() {
-        loadingView.show()
+        self.navigationController?.presentViewController(loadingController, animated: true, completion: nil)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
     }
     
     func hideLoading() {
-        loadingView.dismissWithClickedButtonIndex(0, animated: true)
+        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
     
-    func loadData() {
-        showLoading()
+    func loadData(synchronously: Bool) {
+        if synchronously {
+            showLoading()
+        }
         Alamofire.request(.GET, "http://spikebackend.elasticbeanstalk.com/items")
             .responseJSON { (_, _, JSON, _) in
                 let data = JSON as [[String:String]]
                 self.entries = data
-                self.refreshControl.endRefreshing()
                 self.entriesTable.reloadData()
-                self.hideLoading()
+                if synchronously {
+                    self.hideLoading()
+                }
         }
     }
 }

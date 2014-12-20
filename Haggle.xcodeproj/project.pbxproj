@@ -13,9 +13,12 @@
 		BA29BE261A44E02A003B55D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE251A44E02A003B55D9 /* Images.xcassets */; };
 		BA29BE291A44E02A003B55D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE271A44E02A003B55D9 /* LaunchScreen.xib */; };
 		BA29BE351A44E02A003B55D9 /* HaggleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE341A44E02A003B55D9 /* HaggleTests.swift */; };
-		BAB60F7C1A452CED00786F74 /* Dollar.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = BAB60F761A452BA300786F74 /* Dollar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BA2AE3D81A462EB400E2A05D /* Alamofire.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = BAB60FA21A46144F00786F74 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BA2AE3D91A462EB700E2A05D /* Dollar.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = BAB60FB41A46147400786F74 /* Dollar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BAB60F831A455A8900786F74 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB60F821A455A8900786F74 /* UIColorExtension.swift */; };
-		BABC2C7B1A451B4500DE1BE2 /* Alamofire.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = BABC2C751A451B1400DE1BE2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BAB60F8E1A4563D100786F74 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB60F8D1A4563D100786F74 /* ShareViewController.swift */; };
+		BAB60F901A4563D100786F74 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB60F8F1A4563D100786F74 /* MainInterface.storyboard */; };
+		BAB60F941A4563D100786F74 /* Haggle Share Sheet.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BAB60F891A4563D100786F74 /* Haggle Share Sheet.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BABC2C7E1A451D7C00DE1BE2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2C7D1A451D7C00DE1BE2 /* Utils.swift */; };
 		BABC2C801A451D8600DE1BE2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2C7F1A451D8600DE1BE2 /* Config.swift */; };
 		BAD9FE331A45170E00515648 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD9FE321A45170E00515648 /* EntryCell.swift */; };
@@ -29,59 +32,63 @@
 			remoteGlobalIDString = BA29BE181A44E02A003B55D9;
 			remoteInfo = Haggle;
 		};
-		BAB60F751A452BA300786F74 /* PBXContainerItemProxy */ = {
+		BAB60F911A4563D100786F74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BAB60F6F1A452BA300786F74 /* Dollar.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 92E0D03C19467C67002ACC3D;
-			remoteInfo = Dollar;
-		};
-		BAB60F771A452BA300786F74 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BAB60F6F1A452BA300786F74 /* Dollar.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 92E6686F19F09C6400BB4FB8;
-			remoteInfo = DollarTests;
-		};
-		BAB60F791A452BD700786F74 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BAB60F6F1A452BA300786F74 /* Dollar.xcodeproj */;
+			containerPortal = BA29BE111A44E02A003B55D9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 92E0D03B19467C67002ACC3D;
-			remoteInfo = Dollar;
+			remoteGlobalIDString = BAB60F881A4563D100786F74;
+			remoteInfo = "Haggle Share Sheet";
 		};
-		BABC2C741A451B1400DE1BE2 /* PBXContainerItemProxy */ = {
+		BAB60FA11A46144F00786F74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BABC2C671A451B0E00DE1BE2 /* Alamofire.xcodeproj */;
+			containerPortal = BAB60F9C1A46144F00786F74 /* Alamofire.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
 			remoteInfo = Alamofire;
 		};
-		BABC2C761A451B1400DE1BE2 /* PBXContainerItemProxy */ = {
+		BAB60FA31A46144F00786F74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BABC2C671A451B0E00DE1BE2 /* Alamofire.xcodeproj */;
+			containerPortal = BAB60F9C1A46144F00786F74 /* Alamofire.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
 			remoteInfo = AlamofireTests;
 		};
-		BABC2C781A451B3100DE1BE2 /* PBXContainerItemProxy */ = {
+		BAB60FB31A46147400786F74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BABC2C671A451B0E00DE1BE2 /* Alamofire.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
-			remoteInfo = Alamofire;
+			containerPortal = BAB60FAE1A46147400786F74 /* Dollar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92E0D03C19467C67002ACC3D;
+			remoteInfo = Dollar;
+		};
+		BAB60FB51A46147400786F74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAB60FAE1A46147400786F74 /* Dollar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92E6686F19F09C6400BB4FB8;
+			remoteInfo = DollarTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		BAB60F931A4563D100786F74 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BAB60F941A4563D100786F74 /* Haggle Share Sheet.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BABC2C7A1A451B3600DE1BE2 /* Copy Files (1 item) */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BAB60F7C1A452CED00786F74 /* Dollar.framework in Copy Files (1 item) */,
-				BABC2C7B1A451B4500DE1BE2 /* Alamofire.framework in Copy Files (1 item) */,
+				BA2AE3D91A462EB700E2A05D /* Dollar.framework in Copy Files (1 item) */,
+				BA2AE3D81A462EB400E2A05D /* Alamofire.framework in Copy Files (1 item) */,
 			);
 			name = "Copy Files (1 item)";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,9 +106,15 @@
 		BA29BE2E1A44E02A003B55D9 /* HaggleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaggleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA29BE331A44E02A003B55D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA29BE341A44E02A003B55D9 /* HaggleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaggleTests.swift; sourceTree = "<group>"; };
-		BAB60F6F1A452BA300786F74 /* Dollar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dollar.xcodeproj; path = "../../../Downloads/Dollar.swift-master/Dollar/Dollar.xcodeproj"; sourceTree = "<group>"; };
 		BAB60F821A455A8900786F74 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		BABC2C671A451B0E00DE1BE2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		BAB60F891A4563D100786F74 /* Haggle Share Sheet.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Haggle Share Sheet.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB60F8C1A4563D100786F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB60F8D1A4563D100786F74 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		BAB60F8F1A4563D100786F74 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		BAB60F981A456E5600786F74 /* Haggle Share Sheet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Haggle Share Sheet.entitlements"; sourceTree = "<group>"; };
+		BAB60F991A456E8800786F74 /* Haggle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Haggle.entitlements; sourceTree = "<group>"; };
+		BAB60F9C1A46144F00786F74 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		BAB60FAE1A46147400786F74 /* Dollar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dollar.xcodeproj; path = Dollar.swift/Dollar/Dollar.xcodeproj; sourceTree = "<group>"; };
 		BABC2C7D1A451D7C00DE1BE2 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BABC2C7F1A451D8600DE1BE2 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		BAD9FE321A45170E00515648 /* EntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
@@ -122,15 +135,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAB60F861A4563D100786F74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BA29BE101A44E02A003B55D9 = {
 			isa = PBXGroup;
 			children = (
-				BABC2C671A451B0E00DE1BE2 /* Alamofire.xcodeproj */,
-				BAB60F6F1A452BA300786F74 /* Dollar.xcodeproj */,
+				BAB60F9C1A46144F00786F74 /* Alamofire.xcodeproj */,
+				BAB60FAE1A46147400786F74 /* Dollar.xcodeproj */,
 				BA29BE1B1A44E02A003B55D9 /* Haggle */,
+				BAB60F8A1A4563D100786F74 /* Haggle Share Sheet */,
 				BA29BE311A44E02A003B55D9 /* HaggleTests */,
 				BA29BE1A1A44E02A003B55D9 /* Products */,
 			);
@@ -141,6 +162,7 @@
 			children = (
 				BA29BE191A44E02A003B55D9 /* Haggle.app */,
 				BA29BE2E1A44E02A003B55D9 /* HaggleTests.xctest */,
+				BAB60F891A4563D100786F74 /* Haggle Share Sheet.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +170,7 @@
 		BA29BE1B1A44E02A003B55D9 /* Haggle */ = {
 			isa = PBXGroup;
 			children = (
+				BAB60F991A456E8800786F74 /* Haggle.entitlements */,
 				BAB60F7F1A455A6800786F74 /* Misc Files */,
 				BABC2C7C1A451D5200DE1BE2 /* Utility Files */,
 				BA29BE1E1A44E02A003B55D9 /* AppDelegate.swift */,
@@ -186,15 +209,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BAB60F701A452BA300786F74 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BAB60F761A452BA300786F74 /* Dollar.framework */,
-				BAB60F781A452BA300786F74 /* DollarTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		BAB60F7F1A455A6800786F74 /* Misc Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,11 +217,39 @@
 			name = "Misc Files";
 			sourceTree = "<group>";
 		};
-		BABC2C701A451B1400DE1BE2 /* Products */ = {
+		BAB60F8A1A4563D100786F74 /* Haggle Share Sheet */ = {
 			isa = PBXGroup;
 			children = (
-				BABC2C751A451B1400DE1BE2 /* Alamofire.framework */,
-				BABC2C771A451B1400DE1BE2 /* AlamofireTests.xctest */,
+				BAB60F981A456E5600786F74 /* Haggle Share Sheet.entitlements */,
+				BAB60F8D1A4563D100786F74 /* ShareViewController.swift */,
+				BAB60F8F1A4563D100786F74 /* MainInterface.storyboard */,
+				BAB60F8B1A4563D100786F74 /* Supporting Files */,
+			);
+			path = "Haggle Share Sheet";
+			sourceTree = "<group>";
+		};
+		BAB60F8B1A4563D100786F74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAB60F8C1A4563D100786F74 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAB60F9D1A46144F00786F74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAB60FA21A46144F00786F74 /* Alamofire.framework */,
+				BAB60FA41A46144F00786F74 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAB60FAF1A46147400786F74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAB60FB41A46147400786F74 /* Dollar.framework */,
+				BAB60FB61A46147400786F74 /* DollarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,12 +274,12 @@
 				BA29BE161A44E02A003B55D9 /* Frameworks */,
 				BA29BE171A44E02A003B55D9 /* Resources */,
 				BABC2C7A1A451B3600DE1BE2 /* Copy Files (1 item) */,
+				BAB60F931A4563D100786F74 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BAB60F7A1A452BD700786F74 /* PBXTargetDependency */,
-				BABC2C791A451B3100DE1BE2 /* PBXTargetDependency */,
+				BAB60F921A4563D100786F74 /* PBXTargetDependency */,
 			);
 			name = Haggle;
 			productName = Haggle;
@@ -262,6 +304,23 @@
 			productReference = BA29BE2E1A44E02A003B55D9 /* HaggleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BAB60F881A4563D100786F74 /* Haggle Share Sheet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAB60F951A4563D200786F74 /* Build configuration list for PBXNativeTarget "Haggle Share Sheet" */;
+			buildPhases = (
+				BAB60F851A4563D100786F74 /* Sources */,
+				BAB60F861A4563D100786F74 /* Frameworks */,
+				BAB60F871A4563D100786F74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Haggle Share Sheet";
+			productName = "Haggle Share Sheet";
+			productReference = BAB60F891A4563D100786F74 /* Haggle Share Sheet.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,10 +332,25 @@
 				TargetAttributes = {
 					BA29BE181A44E02A003B55D9 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 8M23MH7MZP;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					BA29BE2D1A44E02A003B55D9 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = BA29BE181A44E02A003B55D9;
+					};
+					BAB60F881A4563D100786F74 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 8M23MH7MZP;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -293,49 +367,50 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = BABC2C701A451B1400DE1BE2 /* Products */;
-					ProjectRef = BABC2C671A451B0E00DE1BE2 /* Alamofire.xcodeproj */;
+					ProductGroup = BAB60F9D1A46144F00786F74 /* Products */;
+					ProjectRef = BAB60F9C1A46144F00786F74 /* Alamofire.xcodeproj */;
 				},
 				{
-					ProductGroup = BAB60F701A452BA300786F74 /* Products */;
-					ProjectRef = BAB60F6F1A452BA300786F74 /* Dollar.xcodeproj */;
+					ProductGroup = BAB60FAF1A46147400786F74 /* Products */;
+					ProjectRef = BAB60FAE1A46147400786F74 /* Dollar.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
 				BA29BE181A44E02A003B55D9 /* Haggle */,
 				BA29BE2D1A44E02A003B55D9 /* HaggleTests */,
+				BAB60F881A4563D100786F74 /* Haggle Share Sheet */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		BAB60F761A452BA300786F74 /* Dollar.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Dollar.framework;
-			remoteRef = BAB60F751A452BA300786F74 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BAB60F781A452BA300786F74 /* DollarTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DollarTests.xctest;
-			remoteRef = BAB60F771A452BA300786F74 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BABC2C751A451B1400DE1BE2 /* Alamofire.framework */ = {
+		BAB60FA21A46144F00786F74 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Alamofire.framework;
-			remoteRef = BABC2C741A451B1400DE1BE2 /* PBXContainerItemProxy */;
+			remoteRef = BAB60FA11A46144F00786F74 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BABC2C771A451B1400DE1BE2 /* AlamofireTests.xctest */ = {
+		BAB60FA41A46144F00786F74 /* AlamofireTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = AlamofireTests.xctest;
-			remoteRef = BABC2C761A451B1400DE1BE2 /* PBXContainerItemProxy */;
+			remoteRef = BAB60FA31A46144F00786F74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BAB60FB41A46147400786F74 /* Dollar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Dollar.framework;
+			remoteRef = BAB60FB31A46147400786F74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BAB60FB61A46147400786F74 /* DollarTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DollarTests.xctest;
+			remoteRef = BAB60FB51A46147400786F74 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -355,6 +430,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB60F871A4563D100786F74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB60F901A4563D100786F74 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +465,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAB60F851A4563D100786F74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB60F8E1A4563D100786F74 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -390,15 +481,10 @@
 			target = BA29BE181A44E02A003B55D9 /* Haggle */;
 			targetProxy = BA29BE2F1A44E02A003B55D9 /* PBXContainerItemProxy */;
 		};
-		BAB60F7A1A452BD700786F74 /* PBXTargetDependency */ = {
+		BAB60F921A4563D100786F74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Dollar;
-			targetProxy = BAB60F791A452BD700786F74 /* PBXContainerItemProxy */;
-		};
-		BABC2C791A451B3100DE1BE2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			targetProxy = BABC2C781A451B3100DE1BE2 /* PBXContainerItemProxy */;
+			target = BAB60F881A4563D100786F74 /* Haggle Share Sheet */;
+			targetProxy = BAB60F911A4563D100786F74 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -441,6 +527,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -483,6 +570,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -503,9 +591,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Haggle/Haggle.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Haggle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -513,9 +606,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Haggle/Haggle.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Haggle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -553,6 +651,40 @@
 			};
 			name = Release;
 		};
+		BAB60F961A4563D200786F74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Haggle Share Sheet/Haggle Share Sheet.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Haggle Share Sheet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BAB60F971A4563D200786F74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Haggle Share Sheet/Haggle Share Sheet.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = "Haggle Share Sheet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,6 +711,15 @@
 			buildConfigurations = (
 				BA29BE3C1A44E02A003B55D9 /* Debug */,
 				BA29BE3D1A44E02A003B55D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAB60F951A4563D200786F74 /* Build configuration list for PBXNativeTarget "Haggle Share Sheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAB60F961A4563D200786F74 /* Debug */,
+				BAB60F971A4563D200786F74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

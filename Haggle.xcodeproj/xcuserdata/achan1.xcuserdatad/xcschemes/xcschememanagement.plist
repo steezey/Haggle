@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Haggle Share Sheet.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Haggle.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>BA29BE2D1A44E02A003B55D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAB60F881A4563D100786F74</key>
 		<dict>
 			<key>primary</key>
 			<true/>
