@@ -12,10 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    func render() {
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        if window != nil {
+            window?.makeKeyAndVisible()
+            var nav = UINavigationController(rootViewController: ViewController())
+            nav.navigationBar.barTintColor = UIColor(white: 65/255.0, alpha: 1)
+            window?.rootViewController = nav
+        }
+    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        render()
         return true
     }
 
