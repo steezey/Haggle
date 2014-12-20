@@ -1,0 +1,6 @@
+[submodule "Alamofire"]
+	path = Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "Dollar.swift"]
+	path = Dollar.swift
+	url = https://github.com/ankurp/Dollar.swift.git

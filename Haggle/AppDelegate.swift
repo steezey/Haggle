@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.makeKeyAndVisible()
             var nav = UINavigationController(rootViewController: ViewController())
             nav.navigationBar.barTintColor = UIColor(white: 65/255.0, alpha: 1)
+            nav.navigationBar.barStyle = UIBarStyle.BlackTranslucent
             window?.rootViewController = nav
         }
     }
