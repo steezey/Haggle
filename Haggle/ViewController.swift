@@ -126,6 +126,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return height
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let item = entries[indexPath.row] as [String:String]
+        let url = item["url"]!
+        UIApplication.sharedApplication().openURL(NSURL(string: url)!)
+    }
+    
     /*
     |--------------------------------------------------------------------------
     | DATA LOADING FUNCTIONS

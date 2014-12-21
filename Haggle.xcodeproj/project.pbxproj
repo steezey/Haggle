@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		BA29BE1F1A44E02A003B55D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE1E1A44E02A003B55D9 /* AppDelegate.swift */; };
 		BA29BE211A44E02A003B55D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE201A44E02A003B55D9 /* ViewController.swift */; };
-		BA29BE241A44E02A003B55D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE221A44E02A003B55D9 /* Main.storyboard */; };
 		BA29BE261A44E02A003B55D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE251A44E02A003B55D9 /* Images.xcassets */; };
 		BA29BE291A44E02A003B55D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE271A44E02A003B55D9 /* LaunchScreen.xib */; };
 		BA29BE351A44E02A003B55D9 /* HaggleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE341A44E02A003B55D9 /* HaggleTests.swift */; };
 		BA2AE3D81A462EB400E2A05D /* Alamofire.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = BAB60FA21A46144F00786F74 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BA2AE3D91A462EB700E2A05D /* Dollar.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = BAB60FB41A46147400786F74 /* Dollar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BA2AE3DB1A4655F800E2A05D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB60FA21A46144F00786F74 /* Alamofire.framework */; };
+		BA2AE3DD1A46739300E2A05D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2AE3DC1A46739300E2A05D /* Item.swift */; };
+		BA2AE3DE1A467CC400E2A05D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2C7D1A451D7C00DE1BE2 /* Utils.swift */; };
+		BA2AE3DF1A467CCA00E2A05D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB60F821A455A8900786F74 /* UIColorExtension.swift */; };
+		BA2AE3E01A467CD000E2A05D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2C7F1A451D8600DE1BE2 /* Config.swift */; };
+		BA2AE3E21A46995A00E2A05D /* UIColoredButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2AE3E11A46995A00E2A05D /* UIColoredButton.swift */; };
 		BAB60F831A455A8900786F74 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB60F821A455A8900786F74 /* UIColorExtension.swift */; };
 		BAB60F8E1A4563D100786F74 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB60F8D1A4563D100786F74 /* ShareViewController.swift */; };
 		BAB60F901A4563D100786F74 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB60F8F1A4563D100786F74 /* MainInterface.storyboard */; };
@@ -22,6 +27,7 @@
 		BABC2C7E1A451D7C00DE1BE2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2C7D1A451D7C00DE1BE2 /* Utils.swift */; };
 		BABC2C801A451D8600DE1BE2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2C7F1A451D8600DE1BE2 /* Config.swift */; };
 		BAD9FE331A45170E00515648 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD9FE321A45170E00515648 /* EntryCell.swift */; };
+		BAFDE1831A46B48800585AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE221A44E02A003B55D9 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +112,8 @@
 		BA29BE2E1A44E02A003B55D9 /* HaggleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaggleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA29BE331A44E02A003B55D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA29BE341A44E02A003B55D9 /* HaggleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaggleTests.swift; sourceTree = "<group>"; };
+		BA2AE3DC1A46739300E2A05D /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BA2AE3E11A46995A00E2A05D /* UIColoredButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColoredButton.swift; sourceTree = "<group>"; };
 		BAB60F821A455A8900786F74 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BAB60F891A4563D100786F74 /* Haggle Share Sheet.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Haggle Share Sheet.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB60F8C1A4563D100786F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA2AE3DB1A4655F800E2A05D /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +232,8 @@
 				BAB60F981A456E5600786F74 /* Haggle Share Sheet.entitlements */,
 				BAB60F8D1A4563D100786F74 /* ShareViewController.swift */,
 				BAB60F8F1A4563D100786F74 /* MainInterface.storyboard */,
+				BA2AE3E11A46995A00E2A05D /* UIColoredButton.swift */,
+				BA2AE3DC1A46739300E2A05D /* Item.swift */,
 				BAB60F8B1A4563D100786F74 /* Supporting Files */,
 			);
 			path = "Haggle Share Sheet";
@@ -348,7 +359,7 @@
 						DevelopmentTeam = 8M23MH7MZP;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -420,7 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA29BE241A44E02A003B55D9 /* Main.storyboard in Resources */,
+				BAFDE1831A46B48800585AF8 /* Main.storyboard in Resources */,
 				BA29BE291A44E02A003B55D9 /* LaunchScreen.xib in Resources */,
 				BA29BE261A44E02A003B55D9 /* Images.xcassets in Resources */,
 			);
@@ -469,7 +480,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA2AE3E21A46995A00E2A05D /* UIColoredButton.swift in Sources */,
+				BA2AE3DD1A46739300E2A05D /* Item.swift in Sources */,
 				BAB60F8E1A4563D100786F74 /* ShareViewController.swift in Sources */,
+				BA2AE3E01A467CD000E2A05D /* Config.swift in Sources */,
+				BA2AE3DE1A467CC400E2A05D /* Utils.swift in Sources */,
+				BA2AE3DF1A467CCA00E2A05D /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +612,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Haggle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -611,6 +628,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Haggle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -654,7 +672,6 @@
 		BAB60F961A4563D200786F74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Haggle Share Sheet/Haggle Share Sheet.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -673,7 +690,6 @@
 		BAB60F971A4563D200786F74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Haggle Share Sheet/Haggle Share Sheet.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;

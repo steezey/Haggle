@@ -16,8 +16,7 @@ import UIKit
 
 func genTitleLabel(title: String, inCellWidth cellWidth: CGFloat) -> UILabel {
     let titleLabel = UILabel()
-    var paragraphStyle = NSMutableParagraphStyle(); paragraphStyle.lineSpacing = 0; paragraphStyle.maximumLineHeight = 25
-    var attrString = NSMutableAttributedString(string: title);attrString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
+    let attrString = Utils.lineHeightAttributedText(title, height: 0)
     titleLabel.attributedText = attrString
     titleLabel.numberOfLines = 0
     titleLabel.lineBreakMode = .ByWordWrapping
