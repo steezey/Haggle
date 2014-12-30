@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA29BE1F1A44E02A003B55D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE1E1A44E02A003B55D9 /* AppDelegate.swift */; };
-		BA29BE211A44E02A003B55D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE201A44E02A003B55D9 /* ViewController.swift */; };
+		BA29BE211A44E02A003B55D9 /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE201A44E02A003B55D9 /* ItemController.swift */; };
 		BA29BE261A44E02A003B55D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE251A44E02A003B55D9 /* Images.xcassets */; };
 		BA29BE291A44E02A003B55D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE271A44E02A003B55D9 /* LaunchScreen.xib */; };
 		BA29BE351A44E02A003B55D9 /* HaggleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE341A44E02A003B55D9 /* HaggleTests.swift */; };
@@ -20,6 +20,16 @@
 		BA2AE3DF1A467CCA00E2A05D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB60F821A455A8900786F74 /* UIColorExtension.swift */; };
 		BA2AE3E01A467CD000E2A05D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2C7F1A451D8600DE1BE2 /* Config.swift */; };
 		BA2AE3E21A46995A00E2A05D /* UIColoredButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2AE3E11A46995A00E2A05D /* UIColoredButton.swift */; };
+		BA2DB4B61A4F17EE0024F40E /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA2DB4B51A4F17EE0024F40E /* icomoon.ttf */; };
+		BA2DB4B71A4F17EE0024F40E /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA2DB4B51A4F17EE0024F40E /* icomoon.ttf */; };
+		BA2DB4BD1A51D4B40024F40E /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DB4BC1A51D4B40024F40E /* FeedController.swift */; };
+		BA2DB4C01A51D4C30024F40E /* InboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DB4BF1A51D4C30024F40E /* InboxController.swift */; };
+		BA574E621A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA574E611A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf */; };
+		BA574E631A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA574E611A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf */; };
+		BA574E651A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA574E641A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf */; };
+		BA574E661A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA574E641A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf */; };
+		BA574E681A47CD200019ABEA /* BemboStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA574E671A47CD200019ABEA /* BemboStd.otf */; };
+		BA574E691A47CD200019ABEA /* BemboStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA574E671A47CD200019ABEA /* BemboStd.otf */; };
 		BAB60F831A455A8900786F74 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB60F821A455A8900786F74 /* UIColorExtension.swift */; };
 		BAB60F8E1A4563D100786F74 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB60F8D1A4563D100786F74 /* ShareViewController.swift */; };
 		BAB60F901A4563D100786F74 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB60F8F1A4563D100786F74 /* MainInterface.storyboard */; };
@@ -105,7 +115,7 @@
 		BA29BE191A44E02A003B55D9 /* Haggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA29BE1D1A44E02A003B55D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA29BE1E1A44E02A003B55D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA29BE201A44E02A003B55D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA29BE201A44E02A003B55D9 /* ItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
 		BA29BE231A44E02A003B55D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA29BE251A44E02A003B55D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BA29BE281A44E02A003B55D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -114,6 +124,12 @@
 		BA29BE341A44E02A003B55D9 /* HaggleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaggleTests.swift; sourceTree = "<group>"; };
 		BA2AE3DC1A46739300E2A05D /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BA2AE3E11A46995A00E2A05D /* UIColoredButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColoredButton.swift; sourceTree = "<group>"; };
+		BA2DB4B51A4F17EE0024F40E /* icomoon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = icomoon.ttf; sourceTree = "<group>"; };
+		BA2DB4BC1A51D4B40024F40E /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		BA2DB4BF1A51D4C30024F40E /* InboxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxController.swift; sourceTree = "<group>"; };
+		BA574E611A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AkzidenzGrotesk-Bold.otf"; sourceTree = "<group>"; };
+		BA574E641A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AkzidenzGrotesk-Medium.otf"; sourceTree = "<group>"; };
+		BA574E671A47CD200019ABEA /* BemboStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BemboStd.otf; sourceTree = "<group>"; };
 		BAB60F821A455A8900786F74 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BAB60F891A4563D100786F74 /* Haggle Share Sheet.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Haggle Share Sheet.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB60F8C1A4563D100786F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -182,8 +198,10 @@
 				BAB60F991A456E8800786F74 /* Haggle.entitlements */,
 				BAB60F7F1A455A6800786F74 /* Misc Files */,
 				BABC2C7C1A451D5200DE1BE2 /* Utility Files */,
+				BA2DB4BC1A51D4B40024F40E /* FeedController.swift */,
+				BA2DB4BF1A51D4C30024F40E /* InboxController.swift */,
+				BA29BE201A44E02A003B55D9 /* ItemController.swift */,
 				BA29BE1E1A44E02A003B55D9 /* AppDelegate.swift */,
-				BA29BE201A44E02A003B55D9 /* ViewController.swift */,
 				BAD9FE321A45170E00515648 /* EntryCell.swift */,
 				BA29BE221A44E02A003B55D9 /* Main.storyboard */,
 				BA29BE251A44E02A003B55D9 /* Images.xcassets */,
@@ -196,6 +214,10 @@
 		BA29BE1C1A44E02A003B55D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA2DB4B51A4F17EE0024F40E /* icomoon.ttf */,
+				BA574E671A47CD200019ABEA /* BemboStd.otf */,
+				BA574E641A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf */,
+				BA574E611A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf */,
 				BA29BE1D1A44E02A003B55D9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -431,9 +453,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA574E621A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf in Resources */,
+				BA2DB4B61A4F17EE0024F40E /* icomoon.ttf in Resources */,
+				BA574E651A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf in Resources */,
 				BAFDE1831A46B48800585AF8 /* Main.storyboard in Resources */,
 				BA29BE291A44E02A003B55D9 /* LaunchScreen.xib in Resources */,
 				BA29BE261A44E02A003B55D9 /* Images.xcassets in Resources */,
+				BA574E681A47CD200019ABEA /* BemboStd.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +474,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA2DB4B71A4F17EE0024F40E /* icomoon.ttf in Resources */,
+				BA574E631A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf in Resources */,
 				BAB60F901A4563D100786F74 /* MainInterface.storyboard in Resources */,
+				BA574E661A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf in Resources */,
+				BA574E691A47CD200019ABEA /* BemboStd.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,12 +489,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA29BE211A44E02A003B55D9 /* ViewController.swift in Sources */,
+				BA29BE211A44E02A003B55D9 /* ItemController.swift in Sources */,
 				BAD9FE331A45170E00515648 /* EntryCell.swift in Sources */,
 				BABC2C801A451D8600DE1BE2 /* Config.swift in Sources */,
 				BA29BE1F1A44E02A003B55D9 /* AppDelegate.swift in Sources */,
+				BA2DB4C01A51D4C30024F40E /* InboxController.swift in Sources */,
 				BABC2C7E1A451D7C00DE1BE2 /* Utils.swift in Sources */,
 				BAB60F831A455A8900786F74 /* UIColorExtension.swift in Sources */,
+				BA2DB4BD1A51D4B40024F40E /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

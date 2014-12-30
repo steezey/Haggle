@@ -17,10 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         if window != nil {
             window?.makeKeyAndVisible()
-            var nav = UINavigationController(rootViewController: ViewController())
-            nav.navigationBar.barTintColor = UIColor(white: 65/255.0, alpha: 1)
-            nav.navigationBar.barStyle = UIBarStyle.BlackTranslucent
-            window?.rootViewController = nav
+            
+            let feed = UINavigationController(rootViewController: FeedController())
+            feed.navigationBar.barTintColor = UIColor(white: 65/255.0, alpha: 1)
+            feed.navigationBar.barStyle = UIBarStyle.BlackTranslucent
+            
+            let inbox = UINavigationController(rootViewController: InboxController())
+            inbox.navigationBar.barTintColor = UIColor(white: 65/255.0, alpha: 1)
+            inbox.navigationBar.barStyle = UIBarStyle.BlackTranslucent
+            
+            let tabs = UITabBarController()
+            tabs.setViewControllers([feed, inbox], animated: false)
+            window?.rootViewController = tabs
         }
     }
     

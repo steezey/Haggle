@@ -10,12 +10,21 @@ import UIKit
 import Alamofire
 import Dollar
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ItemController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var entries = [[String:String]]()
     var entriesTable = UITableView(frame: CGRectZero, style: .Plain)
     var refreshControl = UIRefreshControl()
     var entryCellHeights = [Int:CGFloat]()
+    
+    /*
+    |--------------------------------------------------------------------------
+    | SUBCLASS
+    |--------------------------------------------------------------------------
+    */
+    func dataSource() -> String {
+        return ""
+    }
     
     /*
     |--------------------------------------------------------------------------
@@ -25,6 +34,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "View"
 
         loadData(true)
         render()
@@ -105,15 +115,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = entriesTable.dequeueReusableCellWithIdentifier("EntryCell") as EntryCell
-        let item = entries[indexPath.row] as [String:String]
+        let item = entries[indexPath.row] as [String:AnyObject]
         
-        cell.render(item["title"]!, color: item["color"]!, andSource: item["source"]!)
+        cell.render(item["title"] as String!, providerDisplay: item["provider_display"] as String!, providerName: item["provider_name"] as String!, favicon: item["favicon_url"] as String!)
         return cell
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let item = entries[indexPath.row] as [String:String]
-        let itemId = item["id"]!.toInt()!
+        let item = entries[indexPath.row] as [String:AnyObject]
+        let itemId = item["id"] as Int!
         
         var height: CGFloat
         if let savedHeight = entryCellHeights[itemId] {
@@ -127,9 +137,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let item = entries[indexPath.row] as [String:String]
-        let url = item["url"]!
-        UIApplication.sharedApplication().openURL(NSURL(string: url)!)
+        let item = entries[indexPath.row] as [String:AnyObject]
+        let url = item["url"] as String!
+
+        var vc = UIViewController()
+        vc.view.backgroundColor = UIColor.whiteColor()
+        var toolbar = UIToolbar(frame: CGRectMake(0, 0, view.frame.width, 44 + 20))
+        toolbar.setItems([UIBarButtonItem(title: "Close", style: UIBarButtonItemStyle.Plain, target: self, action: "closeWebModal")], animated: false)
+        vc.view.addSubview(toolbar)
+        
+        var webview = UIWebView(frame: CGRectMake(0, 44 + 20, view.frame.width, view.frame.height - 44 - 20))
+        webview.loadRequest(NSURLRequest(URL: NSURL(string: url)!))
+        vc.view.addSubview(webview)
+        presentViewController(vc, animated: true, completion: nil)
+    }
+    
+    func closeWebModal() {
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     /*
@@ -153,7 +177,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if synchronously {
             showLoading()
         }
-        Alamofire.request(.GET, "http://spikebackend.elasticbeanstalk.com/items")
+        Alamofire.request(.GET, dataSource())
             .responseJSON { (_, _, JSON, _) in
                 let data = JSON as [[String:String]]
                 self.entries = data

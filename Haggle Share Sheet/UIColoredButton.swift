@@ -15,13 +15,15 @@ class UIColoredButton: UIButton {
     override var highlighted: Bool {
         didSet {
             if oldValue != highlighted {
-                UIView.animateWithDuration(0.27, animations: {
-                    if self.highlighted {
+                if self.highlighted {
+                    UIView.animateWithDuration(0.05, animations: {
                         self.backgroundColor = self.highlightColor
-                    } else {
+                    })
+                } else {
+                    UIView.animateWithDuration(0.2, animations: {
                         self.backgroundColor = self.baseColor
-                    }
-                })
+                    })
+                }
             }
         }
     }
@@ -40,6 +42,7 @@ class UIColoredButton: UIButton {
     
     convenience init(baseColor: UIColor, highlightColor: UIColor) {
         self.init()
+        self.backgroundColor = baseColor
         self.baseColor = baseColor
         self.highlightColor = highlightColor
     }

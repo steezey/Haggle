@@ -20,7 +20,7 @@ func genTitleLabel(title: String, inCellWidth cellWidth: CGFloat) -> UILabel {
     titleLabel.attributedText = attrString
     titleLabel.numberOfLines = 0
     titleLabel.lineBreakMode = .ByWordWrapping
-    titleLabel.font = UIFont.boldSystemFontOfSize(21)
+    titleLabel.font = UIFont(name: "AkzidenzGroteskBQ-Bold", size: 21)
     titleLabel.frame = CGRectMake(0, 0, cellWidth - (lrMargin*2) - 25, CGFloat.max)
     titleLabel.sizeToFit()
     titleLabel.frame.origin = CGPointMake(lPadding, tpadding)
@@ -29,8 +29,8 @@ func genTitleLabel(title: String, inCellWidth cellWidth: CGFloat) -> UILabel {
 
 func genSourceLabel(source: String, inCellWidth cellWidth: CGFloat) -> UILabel {
     let sourceLabel = UILabel()
-    sourceLabel.text = source
-    sourceLabel.font = UIFont.boldSystemFontOfSize(12)
+    sourceLabel.text = source.uppercaseString
+    sourceLabel.font = UIFont(name: "AkzidenzGroteskBQ-Medium", size: 11)
     sourceLabel.frame = CGRectMake(0, 0, cellWidth - (lrMargin*2) - 25, CGFloat.max)
     sourceLabel.textColor = UIColor(red: 185/255.0, green: 185/255.0, blue: 185/255.0, alpha: 1)
     sourceLabel.sizeToFit()
@@ -41,7 +41,7 @@ let lrMargin: CGFloat = 13
 let tbMargin: CGFloat = 4
 let lPadding: CGFloat = 13
 let tpadding: CGFloat = 29
-let bpadding: CGFloat = 14
+let bpadding: CGFloat = 12
 let middleSpacing: CGFloat = 27
 
 class EntryCell: UITableViewCell {
@@ -68,9 +68,9 @@ class EntryCell: UITableViewCell {
     |--------------------------------------------------------------------------
     */
     
-    class func calculateHeight(item: [String:String], width: CGFloat) -> CGFloat {
+    class func calculateHeight(item: [String:AnyObject], width: CGFloat) -> CGFloat {
         let title = item["title"] as String!
-        let source = item["source"] as String!
+        let source = item["provider_name"] as String!
         let titleHeight = genTitleLabel(title, inCellWidth: width).frame.size.height
         let sourceHeight = genSourceLabel(source, inCellWidth: width).frame.size.height
         return titleHeight + sourceHeight + (tpadding + bpadding) + middleSpacing + (tbMargin*2)
@@ -82,7 +82,7 @@ class EntryCell: UITableViewCell {
     |--------------------------------------------------------------------------
     */
 
-    func render(title: String, color: String, andSource source: String) {
+    func render(title: String, providerDisplay: String, providerName: String, favicon: String) {
         
         if card != nil {
             card.removeFromSuperview()
@@ -102,13 +102,13 @@ class EntryCell: UITableViewCell {
         card.addSubview(titleLabel)
         
         /* CARD SOURCE */
-        let sourceLabel = genSourceLabel(source, inCellWidth: frame.size.width)
+        let sourceLabel = genSourceLabel(providerName, inCellWidth: frame.size.width)
         sourceLabel.frame.origin = CGPointMake(lPadding, titleLabel.frame.size.height + titleLabel.frame.origin.y + middleSpacing)
         card.addSubview(sourceLabel)
         
         /* CARD FLARE */
         let flare = UIView(frame: CGRectMake(8, 0, 50, 5))
-        flare.backgroundColor = UIColor(rgba: "#" + color)
+//        flare.backgroundColor = UIColor(rgba: "#" + color)
         card.addSubview(flare)
         
         /* CARD HEIGHT */

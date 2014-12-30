@@ -15,5 +15,5 @@ struct Utils {
         var attrString = NSMutableAttributedString(string: string);attrString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attrString.length))
         return attrString
     }
-    
+    static var uuid: String = NSUUID().UUIDString
 }
