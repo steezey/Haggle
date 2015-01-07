@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </mutableArray>
+        <mutableArray key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+            <string>DINPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <tableViewCell contentMode="scaleToFill" placeholderIntrinsicWidth="620" placeholderIntrinsicHeight="229" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedLinkCard" id="JhW-2a-Ojm" customClass="FeedLinkCard" customModule="Haggle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="620" height="229"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JhW-2a-Ojm" id="4Ac-lP-ZZP">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="577" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="x2M-EH-097" userLabel="Card Region">
+                        <rect key="frame" x="21" y="65" width="577" height="101"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="49" translatesAutoresizingMaskIntoConstraints="NO" id="Jyx-Ll-THr" userLabel="Provider Area">
+                                <rect key="frame" x="9" y="43" width="560" height="49"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUA-yj-1eP">
+                                        <rect key="frame" x="8" y="8" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="cDh-1n-kVc"/>
+                                            <constraint firstAttribute="width" constant="24" id="r2O-b5-wiw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" misplaced="YES" placeholderIntrinsicWidth="490" placeholderIntrinsicHeight="21" text="In The Murky World Of Cyberattacks, Counterstrikes Lack Rules" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlG-uK-Prc">
+                                        <rect key="frame" x="48" y="8" width="490" height="21"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="14"/>
+                                        <color key="textColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" misplaced="YES" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="21" text="NYTIMES.COM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9y-9Q-uQq">
+                                        <rect key="frame" x="48" y="27" width="375" height="21"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="12"/>
+                                        <color key="textColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hlG-uK-Prc" firstAttribute="top" secondItem="yUA-yj-1eP" secondAttribute="top" constant="-2" id="CfV-Zh-R4O"/>
+                                    <constraint firstAttribute="trailing" secondItem="hlG-uK-Prc" secondAttribute="trailing" constant="5" id="FNX-ho-X72"/>
+                                    <constraint firstAttribute="trailing" secondItem="q9y-9Q-uQq" secondAttribute="trailing" constant="5" id="MyS-8C-djI"/>
+                                    <constraint firstItem="hlG-uK-Prc" firstAttribute="leading" secondItem="yUA-yj-1eP" secondAttribute="trailing" constant="4" id="S9x-4V-v6z"/>
+                                    <constraint firstItem="q9y-9Q-uQq" firstAttribute="leading" secondItem="hlG-uK-Prc" secondAttribute="leading" id="SD0-RJ-S4S"/>
+                                    <constraint firstItem="q9y-9Q-uQq" firstAttribute="top" secondItem="hlG-uK-Prc" secondAttribute="bottom" constant="2" id="gwb-Vt-YhJ"/>
+                                    <constraint firstItem="yUA-yj-1eP" firstAttribute="leading" secondItem="Jyx-Ll-THr" secondAttribute="leading" constant="8" id="mvL-j0-Fyy"/>
+                                    <constraint firstAttribute="bottom" secondItem="q9y-9Q-uQq" secondAttribute="bottom" constant="7" id="sY0-Ku-pi6"/>
+                                    <constraint firstItem="yUA-yj-1eP" firstAttribute="top" secondItem="Jyx-Ll-THr" secondAttribute="top" constant="8" id="tRK-dV-CsY"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" misplaced="YES" placeholderIntrinsicWidth="433" placeholderIntrinsicHeight="34" text="NYTimes as usual is head and shoulders above the rest" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAb-0l-VIv">
+                                <rect key="frame" x="8" y="8" width="433" height="34"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="20"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jyx-Ll-THr" firstAttribute="trailing" secondItem="DAb-0l-VIv" secondAttribute="trailing" id="bd1-bk-aaf"/>
+                            <constraint firstItem="Jyx-Ll-THr" firstAttribute="top" secondItem="DAb-0l-VIv" secondAttribute="bottom" constant="8" id="ckc-FJ-lfq"/>
+                            <constraint firstItem="DAb-0l-VIv" firstAttribute="leading" secondItem="x2M-EH-097" secondAttribute="leading" constant="15" id="ePN-lr-v9f"/>
+                            <constraint firstAttribute="trailing" secondItem="DAb-0l-VIv" secondAttribute="trailing" constant="15" id="fwI-ZC-ZcL"/>
+                            <constraint firstItem="Jyx-Ll-THr" firstAttribute="leading" secondItem="DAb-0l-VIv" secondAttribute="leading" constant="-1" id="jG9-w7-yxI"/>
+                            <constraint firstAttribute="trailing" secondItem="Jyx-Ll-THr" secondAttribute="trailing" constant="12" id="jnM-tR-Mn2"/>
+                            <constraint firstAttribute="bottom" secondItem="Jyx-Ll-THr" secondAttribute="bottom" constant="18" id="mmd-dM-R06"/>
+                            <constraint firstItem="DAb-0l-VIv" firstAttribute="top" secondItem="x2M-EH-097" secondAttribute="top" constant="15" id="shq-UX-xRn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jnM-tR-Mn2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="x2M-EH-097" secondAttribute="trailing" constant="12" id="TuX-Jz-7Jm"/>
+                    <constraint firstAttribute="top" secondItem="x2M-EH-097" secondAttribute="top" constant="-7" id="i3o-ZS-rUH"/>
+                    <constraint firstAttribute="bottom" secondItem="x2M-EH-097" secondAttribute="bottom" constant="10" id="nmp-0T-e2N"/>
+                    <constraint firstAttribute="leading" secondItem="x2M-EH-097" secondAttribute="leading" constant="-12" id="v09-5H-teU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageMargin" destination="S9x-4V-v6z" id="vsC-dA-tVJ"/>
+                <outlet property="imageWidth" destination="r2O-b5-wiw" id="3Aa-ay-GJO"/>
+                <outlet property="providerArea" destination="Jyx-Ll-THr" id="Wkc-JT-QsT"/>
+                <outlet property="region" destination="x2M-EH-097" id="hQN-yd-oOh"/>
+                <outlet property="titleLabel" destination="DAb-0l-VIv" id="Zs6-qo-PYI"/>
+            </connections>
+            <point key="canvasLocation" x="401" y="-104.5"/>
+        </tableViewCell>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>

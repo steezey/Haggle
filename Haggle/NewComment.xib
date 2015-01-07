@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </mutableArray>
+        <mutableArray key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+        </mutableArray>
+        <mutableArray key="icomoon.ttf">
+            <string>icomoon</string>
+            <string>icomoon</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewComment" rowHeight="142" id="aTM-Gb-YQk" customClass="NewComment" customModule="Haggle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="483" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aTM-Gb-YQk" id="mxM-hz-Qma">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QIk-s1-bN9">
+                        <rect key="frame" x="10" y="10" width="465" height="124"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wad-TR-gWv">
+                                <rect key="frame" x="411" y="47" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="24"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WHAT ARE YOUR THOUGHTS?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9q-QO-r5D">
+                                <rect key="frame" x="37" y="47" width="247" height="21"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="13"/>
+                                <color key="textColor" red="0.36078431372549019" green="0.36078431372549019" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZx-RC-mHe">
+                                <rect key="frame" x="411" y="94" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="20"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="done:" destination="aTM-Gb-YQk" eventType="touchUpInside" id="fPk-7G-3K7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Lorem" translatesAutoresizingMaskIntoConstraints="NO" id="Bco-2O-Enz">
+                                <rect key="frame" x="8" y="8" width="233" height="62"/>
+                                <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Bco-2O-Enz" secondAttribute="bottom" constant="20" symbolic="YES" id="0UM-gW-93F"/>
+                            <constraint firstItem="r9q-QO-r5D" firstAttribute="top" secondItem="QIk-s1-bN9" secondAttribute="top" id="5vn-kB-bmO"/>
+                            <constraint firstItem="wad-TR-gWv" firstAttribute="leading" secondItem="Bco-2O-Enz" secondAttribute="trailing" constant="16" id="7m8-Pf-3Bn"/>
+                            <constraint firstAttribute="trailing" secondItem="IZx-RC-mHe" secondAttribute="trailing" constant="8" id="MBM-nf-fFc"/>
+                            <constraint firstAttribute="bottom" secondItem="r9q-QO-r5D" secondAttribute="bottom" id="W2I-P1-eRA"/>
+                            <constraint firstAttribute="trailing" secondItem="wad-TR-gWv" secondAttribute="trailing" constant="8" id="YKd-sj-XHm"/>
+                            <constraint firstAttribute="bottom" secondItem="IZx-RC-mHe" secondAttribute="bottom" constant="8" id="kOF-VC-LWj"/>
+                            <constraint firstItem="Bco-2O-Enz" firstAttribute="top" secondItem="QIk-s1-bN9" secondAttribute="top" constant="8" id="lla-r8-TZZ"/>
+                            <constraint firstItem="r9q-QO-r5D" firstAttribute="leading" secondItem="QIk-s1-bN9" secondAttribute="leading" id="p9F-qq-Vis"/>
+                            <constraint firstAttribute="trailing" secondItem="r9q-QO-r5D" secondAttribute="trailing" id="pKf-9A-Mt5"/>
+                            <constraint firstItem="Bco-2O-Enz" firstAttribute="leading" secondItem="QIk-s1-bN9" secondAttribute="leading" constant="12" id="wa8-rB-gC0"/>
+                            <constraint firstItem="wad-TR-gWv" firstAttribute="centerY" secondItem="r9q-QO-r5D" secondAttribute="centerY" constant="2" id="z9y-Vd-Oi6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QIk-s1-bN9" firstAttribute="leading" secondItem="mxM-hz-Qma" secondAttribute="leading" constant="15" id="DKp-Bb-btF"/>
+                    <constraint firstAttribute="trailing" secondItem="QIk-s1-bN9" secondAttribute="trailing" constant="15" id="ZHM-Z0-cEb"/>
+                    <constraint firstItem="QIk-s1-bN9" firstAttribute="top" secondItem="mxM-hz-Qma" secondAttribute="top" constant="15" id="eXa-rN-8mj"/>
+                    <constraint firstItem="QIk-s1-bN9" firstAttribute="bottom" secondItem="mxM-hz-Qma" secondAttribute="bottom" constant="-15" id="reo-uP-uNU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="wad-TR-gWv" id="gqQ-kB-D8Q"/>
+                <outlet property="labelText" destination="r9q-QO-r5D" id="buM-wv-dkM"/>
+                <outlet property="main" destination="QIk-s1-bN9" id="SWH-5P-gY8"/>
+                <outlet property="stickyButton" destination="IZx-RC-mHe" id="g4t-jA-q4c"/>
+                <outlet property="textArea" destination="Bco-2O-Enz" id="N5j-2L-IW7"/>
+            </connections>
+            <point key="canvasLocation" x="407.5" y="-5"/>
+        </tableViewCell>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>

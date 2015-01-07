@@ -13,18 +13,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    func barify(nav: UINavigationController, view: UIViewController) {
+        var bar = nav.navigationBar
+        bar.barTintColor = UIColor(white: 65/255.0, alpha: 1)
+        bar.barStyle = UIBarStyle.BlackTranslucent
+    }
+    
     func render() {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         if window != nil {
             window?.makeKeyAndVisible()
+
+            let feedViewCon = FeedController()
+            feedViewCon.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(named: "list-simple-7.png"), tag: 0)
+            let feed = UINavigationController(rootViewController: feedViewCon)
+            barify(feed, view: feedViewCon)
             
-            let feed = UINavigationController(rootViewController: FeedController())
-            feed.navigationBar.barTintColor = UIColor(white: 65/255.0, alpha: 1)
-            feed.navigationBar.barStyle = UIBarStyle.BlackTranslucent
-            
-            let inbox = UINavigationController(rootViewController: InboxController())
-            inbox.navigationBar.barTintColor = UIColor(white: 65/255.0, alpha: 1)
-            inbox.navigationBar.barStyle = UIBarStyle.BlackTranslucent
+            let inboxViewCon = InboxController()
+            inboxViewCon.tabBarItem = UITabBarItem(title: "Inbox", image: UIImage(named: "business-box-in-7.png"), tag: 0)
+            let inbox = UINavigationController(rootViewController: inboxViewCon)
+            barify(inbox, view: inboxViewCon)
             
             let tabs = UITabBarController()
             tabs.setViewControllers([feed, inbox], animated: false)

@@ -7,9 +7,42 @@
 //
 
 import UIKit
+import Dollar
 
 class InboxController: ItemController {
     override func dataSource() -> String {
-        return "http://spikebackend.elasticbeanstalk.com/items/inbox?uuid=" + Utils.uuid
+        return "http://spurt.elasticbeanstalk.com/posts/inbox?uuid=" + Utils.uuid
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let post = entries[indexPath.row] as Post
+        
+        let newPost = NSBundle.mainBundle().loadNibNamed("NewPost", owner: self, options: nil).first as NewPostView
+        
+        let opener = navigationController?.tabBarController?.view as UIView!
+        newPost.frame = opener.bounds
+        opener.addSubview(newPost)
+        
+        newPost.renderLinkPost(post, parent: self)
+    }
+    
+    override func receivePostedId(number: NSNumber, type: String) {
+        super.receivePostedId(number, type: type)
+        
+        var index = $.findIndex(entries, iterator: {
+            $0.id as NSNumber == number
+        })
+        
+        if index != nil {
+            Utils.delay(0.5, {
+                self.entries.removeAtIndex(index!)
+                self.entriesTable.deleteRowsAtIndexPaths([NSIndexPath(forRow: index!, inSection: 0)], withRowAnimation: UITableViewRowAnimation.Left)
+            })
+        }
+    }
+    
+    override func renderEntriesTable() {
+        super.renderEntriesTable()
+        entriesTable.registerClass(EntryCell.self, forCellReuseIdentifier: "EntryCell")
     }
 }

@@ -1,0 +1,13 @@
+<script>
+function triggerParent() {
+    window.location = "preview:imgloaded"
+}
+
+var imgs = document.getElementsByTagName('img')
+for(var x = 0; x < imgs.length; x++) {
+    var img = imgs[x];
+    img.onload = triggerParent
+}
+</script>
+</body>
+</html>

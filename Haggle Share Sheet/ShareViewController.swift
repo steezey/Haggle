@@ -14,21 +14,13 @@ import Alamofire
 
 class ShareViewController: UIViewController, UITextViewDelegate {
     
-    let saveSource = "http://spurt.elasticbeanstalk.com/items/create"
+    let saveSource = "http://spurt.elasticbeanstalk.com/link-posts/create"
     
     var darken: UIView!
     var sheet: UIView!
+    var loader: UIActivityIndicatorView!
     
     var tapGesture: UITapGestureRecognizer!
-    
-    func delay(delay:Double, closure:()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(delay * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(), closure)
-    }
     
     /*
     |--------------------------------------------------------------------------
@@ -54,8 +46,14 @@ class ShareViewController: UIViewController, UITextViewDelegate {
     func render() {
         renderDarken()
         renderSheet()
-        
-        makeTapGesture()
+        renderLoader()
+    }
+    
+    func renderLoader() {
+        loader = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.White)
+        loader.center = view.center
+        loader.startAnimating()
+        view.addSubview(loader)
     }
     
     func renderDarken() {
@@ -123,7 +121,7 @@ class ShareViewController: UIViewController, UITextViewDelegate {
     }
     
     func closeDelay() {
-        delay(1.8, closure: {
+        Utils.delay(1.8, closure: {
             self.view.removeGestureRecognizer(self.tapGesture)
             self.animateOut()
         })
@@ -147,18 +145,21 @@ class ShareViewController: UIViewController, UITextViewDelegate {
             self.sheet.transform = CGAffineTransformMakeScale(1, 1)
         }, completion: nil)
         
+        makeTapGesture()
         closeDelay()
+        loader.removeFromSuperview()
     }
     
     func animateOut() {
         UIView.animateWithDuration(0.4, animations: {
             self.darken.alpha = 0
+            self.sheet.alpha = 0
         }, completion: { (_) in
             self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
         })
         
-        UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1.0, options: UIViewAnimationOptions.allZeros, animations: {
-            self.sheet.transform = CGAffineTransformMakeScale(0.01, 0.01)
+        UIView.animateWithDuration(0.6, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1.0, options: UIViewAnimationOptions.allZeros, animations: {
+            self.sheet.transform = CGAffineTransformMakeScale(0.73, 0.73)
         }, completion: { (_) in
             
         })

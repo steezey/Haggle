@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedTextCard" rowHeight="206" id="gDZ-bF-EiZ" customClass="FeedTextCard" customModule="Haggle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="206"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gDZ-bF-EiZ" id="K5T-iQ-jiG">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qTV-of-aGh" userLabel="Card Region">
+                        <rect key="frame" x="112" y="52" width="226" height="103"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF6-zA-KuO">
+                                <rect key="frame" x="18" y="30" width="190" height="43"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DF6-zA-KuO" firstAttribute="leading" secondItem="qTV-of-aGh" secondAttribute="leading" constant="15" id="CSN-qB-i7O"/>
+                            <constraint firstAttribute="bottom" secondItem="DF6-zA-KuO" secondAttribute="bottom" constant="24" id="ISx-hv-1k9"/>
+                            <constraint firstItem="DF6-zA-KuO" firstAttribute="top" secondItem="qTV-of-aGh" secondAttribute="top" constant="20" id="ROR-SK-PuQ"/>
+                            <constraint firstAttribute="trailing" secondItem="DF6-zA-KuO" secondAttribute="trailing" constant="15" id="gN7-jJ-ynb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qTV-of-aGh" firstAttribute="leading" secondItem="K5T-iQ-jiG" secondAttribute="leading" constant="12" id="49h-Ia-9cY"/>
+                    <constraint firstItem="qTV-of-aGh" firstAttribute="top" secondItem="K5T-iQ-jiG" secondAttribute="top" constant="7" id="CW2-2s-dMZ"/>
+                    <constraint firstAttribute="trailing" secondItem="qTV-of-aGh" secondAttribute="trailing" constant="12" id="OPa-HM-TkZ"/>
+                    <constraint firstAttribute="bottom" secondItem="qTV-of-aGh" secondAttribute="bottom" constant="7" id="aSj-te-LJ6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="region" destination="qTV-of-aGh" id="dv2-gn-eV6"/>
+                <outlet property="titleLabel" destination="DF6-zA-KuO" id="Tny-uB-n7f"/>
+            </connections>
+            <point key="canvasLocation" x="391.5" y="27"/>
+        </tableViewCell>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>

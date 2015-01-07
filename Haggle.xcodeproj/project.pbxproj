@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA2446531A5399F200CFECBC /* Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2446501A5399DB00CFECBC /* Snappy.framework */; };
+		BA2446541A5399F200CFECBC /* Snappy.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = BA2446501A5399DB00CFECBC /* Snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BA29BE1F1A44E02A003B55D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE1E1A44E02A003B55D9 /* AppDelegate.swift */; };
 		BA29BE211A44E02A003B55D9 /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA29BE201A44E02A003B55D9 /* ItemController.swift */; };
 		BA29BE261A44E02A003B55D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE251A44E02A003B55D9 /* Images.xcassets */; };
@@ -20,16 +22,43 @@
 		BA2AE3DF1A467CCA00E2A05D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB60F821A455A8900786F74 /* UIColorExtension.swift */; };
 		BA2AE3E01A467CD000E2A05D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2C7F1A451D8600DE1BE2 /* Config.swift */; };
 		BA2AE3E21A46995A00E2A05D /* UIColoredButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2AE3E11A46995A00E2A05D /* UIColoredButton.swift */; };
-		BA2DB4B61A4F17EE0024F40E /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA2DB4B51A4F17EE0024F40E /* icomoon.ttf */; };
-		BA2DB4B71A4F17EE0024F40E /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA2DB4B51A4F17EE0024F40E /* icomoon.ttf */; };
 		BA2DB4BD1A51D4B40024F40E /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DB4BC1A51D4B40024F40E /* FeedController.swift */; };
 		BA2DB4C01A51D4C30024F40E /* InboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2DB4BF1A51D4C30024F40E /* InboxController.swift */; };
-		BA574E621A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA574E611A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf */; };
-		BA574E631A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA574E611A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf */; };
-		BA574E651A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA574E641A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf */; };
-		BA574E661A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA574E641A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf */; };
+		BA2DB4C21A526CFC0024F40E /* list-simple-7.png in Resources */ = {isa = PBXBuildFile; fileRef = BA2DB4C11A526CFC0024F40E /* list-simple-7.png */; };
+		BA2DB4C41A526D3B0024F40E /* business-box-in-7.png in Resources */ = {isa = PBXBuildFile; fileRef = BA2DB4C31A526D3B0024F40E /* business-box-in-7.png */; };
+		BA405E1A1A5644EF00027F32 /* PostDropDown.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA405E191A5644EF00027F32 /* PostDropDown.xib */; };
+		BA405E211A56450F00027F32 /* PostDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA405E201A56450F00027F32 /* PostDropDown.swift */; };
+		BA405E261A564F8400027F32 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA405E251A564F8400027F32 /* icomoon.ttf */; };
+		BA405E271A564F8400027F32 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA405E251A564F8400027F32 /* icomoon.ttf */; };
+		BA405E291A56E31700027F32 /* FeedTextCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA405E281A56E31700027F32 /* FeedTextCard.swift */; };
+		BA405E2A1A56E31700027F32 /* FeedTextCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA405E281A56E31700027F32 /* FeedTextCard.swift */; };
+		BA405E2C1A56E32A00027F32 /* FeedTextCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA405E2B1A56E32A00027F32 /* FeedTextCard.xib */; };
+		BA405E2D1A56E32A00027F32 /* FeedTextCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA405E2B1A56E32A00027F32 /* FeedTextCard.xib */; };
+		BA4F504F1A5C2BDB003A34AC /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F504E1A5C2BDB003A34AC /* Comment.swift */; };
 		BA574E681A47CD200019ABEA /* BemboStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA574E671A47CD200019ABEA /* BemboStd.otf */; };
 		BA574E691A47CD200019ABEA /* BemboStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA574E671A47CD200019ABEA /* BemboStd.otf */; };
+		BA5D80C81A5AEF2000581E01 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5D80C71A5AEF2000581E01 /* Post.swift */; };
+		BA5D80C91A5AF1DC00581E01 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5D80C71A5AEF2000581E01 /* Post.swift */; };
+		BA5D80CB1A5AF60700581E01 /* FullPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5D80CA1A5AF60700581E01 /* FullPostView.swift */; };
+		BA65B5591A5D34C8000EA01C /* readerA.html in Resources */ = {isa = PBXBuildFile; fileRef = BA65B5581A5D34C8000EA01C /* readerA.html */; };
+		BA65B5601A5D3A2F000EA01C /* readerO.html in Resources */ = {isa = PBXBuildFile; fileRef = BA65B55F1A5D3A2F000EA01C /* readerO.html */; };
+		BA71E2691A53FE76006AD99A /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB60FB41A46147400786F74 /* Dollar.framework */; };
+		BA71E26B1A54410F006AD99A /* FeedLinkCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71E26A1A54410F006AD99A /* FeedLinkCard.swift */; };
+		BA71E26D1A544123006AD99A /* FeedLinkCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA71E26C1A544123006AD99A /* FeedLinkCard.xib */; };
+		BA71E26F1A544395006AD99A /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71E26E1A544395006AD99A /* PostCell.swift */; };
+		BA7EE2B11A5586A30003A061 /* DINPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA7EE2B01A5586A30003A061 /* DINPro-Regular.otf */; };
+		BA7EE2B21A5586A30003A061 /* DINPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA7EE2B01A5586A30003A061 /* DINPro-Regular.otf */; };
+		BA7EE2B91A55874E0003A061 /* DINPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA7EE2B81A55874E0003A061 /* DINPro-Medium.otf */; };
+		BA7EE2BA1A55874E0003A061 /* DINPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA7EE2B81A55874E0003A061 /* DINPro-Medium.otf */; };
+		BA8E250F1A5C2C5200FBBC40 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F504E1A5C2BDB003A34AC /* Comment.swift */; };
+		BA8E25161A5C315D00FBBC40 /* NewComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E25151A5C315D00FBBC40 /* NewComment.swift */; };
+		BA8E25181A5C316900FBBC40 /* NewComment.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA8E25171A5C316900FBBC40 /* NewComment.xib */; };
+		BA8E251A1A5C3ECD00FBBC40 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA8E25191A5C3ECD00FBBC40 /* DINPro-Bold.otf */; };
+		BA8E251B1A5C3ECD00FBBC40 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA8E25191A5C3ECD00FBBC40 /* DINPro-Bold.otf */; };
+		BA8E251D1A5CE13B00FBBC40 /* DINPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA8E251C1A5CE13B00FBBC40 /* DINPro-Light.ttf */; };
+		BA8E251E1A5CE13B00FBBC40 /* DINPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA8E251C1A5CE13B00FBBC40 /* DINPro-Light.ttf */; };
+		BA90BA4D1A5286C80090989C /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90BA4C1A5286C80090989C /* NewPostView.swift */; };
+		BA90BA531A5288930090989C /* NewPost.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA90BA521A5288930090989C /* NewPost.xib */; };
 		BAB60F831A455A8900786F74 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB60F821A455A8900786F74 /* UIColorExtension.swift */; };
 		BAB60F8E1A4563D100786F74 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB60F8D1A4563D100786F74 /* ShareViewController.swift */; };
 		BAB60F901A4563D100786F74 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB60F8F1A4563D100786F74 /* MainInterface.storyboard */; };
@@ -37,10 +66,32 @@
 		BABC2C7E1A451D7C00DE1BE2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2C7D1A451D7C00DE1BE2 /* Utils.swift */; };
 		BABC2C801A451D8600DE1BE2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2C7F1A451D8600DE1BE2 /* Config.swift */; };
 		BAD9FE331A45170E00515648 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD9FE321A45170E00515648 /* EntryCell.swift */; };
+		BAEFDDF81A5BF8E2006BC13B /* FullPostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAEFDDF71A5BF8E2006BC13B /* FullPostView.xib */; };
 		BAFDE1831A46B48800585AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA29BE221A44E02A003B55D9 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BA24464F1A5399DB00CFECBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA24464A1A5399DB00CFECBC /* Snappy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = Snappy;
+		};
+		BA2446511A5399DB00CFECBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA24464A1A5399DB00CFECBC /* Snappy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = SnappyTests;
+		};
+		BA2446551A5399F200CFECBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA24464A1A5399DB00CFECBC /* Snappy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = Snappy;
+		};
 		BA29BE2F1A44E02A003B55D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BA29BE111A44E02A003B55D9 /* Project object */;
@@ -103,6 +154,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BA2446541A5399F200CFECBC /* Snappy.framework in Copy Files (1 item) */,
 				BA2AE3D91A462EB700E2A05D /* Dollar.framework in Copy Files (1 item) */,
 				BA2AE3D81A462EB400E2A05D /* Alamofire.framework in Copy Files (1 item) */,
 			);
@@ -112,6 +164,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA24464A1A5399DB00CFECBC /* Snappy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Snappy.xcodeproj; path = Snappy/Snappy.xcodeproj; sourceTree = "<group>"; };
 		BA29BE191A44E02A003B55D9 /* Haggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Haggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA29BE1D1A44E02A003B55D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA29BE1E1A44E02A003B55D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,12 +177,32 @@
 		BA29BE341A44E02A003B55D9 /* HaggleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaggleTests.swift; sourceTree = "<group>"; };
 		BA2AE3DC1A46739300E2A05D /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BA2AE3E11A46995A00E2A05D /* UIColoredButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColoredButton.swift; sourceTree = "<group>"; };
-		BA2DB4B51A4F17EE0024F40E /* icomoon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = icomoon.ttf; sourceTree = "<group>"; };
 		BA2DB4BC1A51D4B40024F40E /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		BA2DB4BF1A51D4C30024F40E /* InboxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxController.swift; sourceTree = "<group>"; };
-		BA574E611A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AkzidenzGrotesk-Bold.otf"; sourceTree = "<group>"; };
-		BA574E641A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AkzidenzGrotesk-Medium.otf"; sourceTree = "<group>"; };
+		BA2DB4C11A526CFC0024F40E /* list-simple-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list-simple-7.png"; sourceTree = "<group>"; };
+		BA2DB4C31A526D3B0024F40E /* business-box-in-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "business-box-in-7.png"; sourceTree = "<group>"; };
+		BA405E191A5644EF00027F32 /* PostDropDown.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostDropDown.xib; sourceTree = "<group>"; };
+		BA405E201A56450F00027F32 /* PostDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDropDown.swift; sourceTree = "<group>"; };
+		BA405E251A564F8400027F32 /* icomoon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = icomoon.ttf; sourceTree = "<group>"; };
+		BA405E281A56E31700027F32 /* FeedTextCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTextCard.swift; sourceTree = "<group>"; };
+		BA405E2B1A56E32A00027F32 /* FeedTextCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTextCard.xib; sourceTree = "<group>"; };
+		BA4F504E1A5C2BDB003A34AC /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		BA574E671A47CD200019ABEA /* BemboStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BemboStd.otf; sourceTree = "<group>"; };
+		BA5D80C71A5AEF2000581E01 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		BA5D80CA1A5AF60700581E01 /* FullPostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullPostView.swift; sourceTree = "<group>"; };
+		BA65B5581A5D34C8000EA01C /* readerA.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = readerA.html; sourceTree = "<group>"; };
+		BA65B55F1A5D3A2F000EA01C /* readerO.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = readerO.html; sourceTree = "<group>"; };
+		BA71E26A1A54410F006AD99A /* FeedLinkCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLinkCard.swift; sourceTree = "<group>"; };
+		BA71E26C1A544123006AD99A /* FeedLinkCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedLinkCard.xib; sourceTree = "<group>"; };
+		BA71E26E1A544395006AD99A /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		BA7EE2B01A5586A30003A061 /* DINPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Regular.otf"; sourceTree = "<group>"; };
+		BA7EE2B81A55874E0003A061 /* DINPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Medium.otf"; sourceTree = "<group>"; };
+		BA8E25151A5C315D00FBBC40 /* NewComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewComment.swift; sourceTree = "<group>"; };
+		BA8E25171A5C316900FBBC40 /* NewComment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewComment.xib; sourceTree = "<group>"; };
+		BA8E25191A5C3ECD00FBBC40 /* DINPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Bold.otf"; sourceTree = "<group>"; };
+		BA8E251C1A5CE13B00FBBC40 /* DINPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Light.ttf"; sourceTree = "<group>"; };
+		BA90BA4C1A5286C80090989C /* NewPostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
+		BA90BA521A5288930090989C /* NewPost.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewPost.xib; sourceTree = "<group>"; };
 		BAB60F821A455A8900786F74 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BAB60F891A4563D100786F74 /* Haggle Share Sheet.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Haggle Share Sheet.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB60F8C1A4563D100786F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,6 +215,7 @@
 		BABC2C7D1A451D7C00DE1BE2 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BABC2C7F1A451D8600DE1BE2 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		BAD9FE321A45170E00515648 /* EntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
+		BAEFDDF71A5BF8E2006BC13B /* FullPostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullPostView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +223,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA2446531A5399F200CFECBC /* Snappy.framework in Frameworks */,
+				BA71E2691A53FE76006AD99A /* Dollar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,9 +246,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA24464B1A5399DB00CFECBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA2446501A5399DB00CFECBC /* Snappy.framework */,
+				BA2446521A5399DB00CFECBC /* SnappyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BA29BE101A44E02A003B55D9 = {
 			isa = PBXGroup;
 			children = (
+				BA24464A1A5399DB00CFECBC /* Snappy.xcodeproj */,
 				BAB60F9C1A46144F00786F74 /* Alamofire.xcodeproj */,
 				BAB60FAE1A46147400786F74 /* Dollar.xcodeproj */,
 				BA29BE1B1A44E02A003B55D9 /* Haggle */,
@@ -202,11 +288,26 @@
 				BA2DB4BF1A51D4C30024F40E /* InboxController.swift */,
 				BA29BE201A44E02A003B55D9 /* ItemController.swift */,
 				BA29BE1E1A44E02A003B55D9 /* AppDelegate.swift */,
+				BA71E26E1A544395006AD99A /* PostCell.swift */,
 				BAD9FE321A45170E00515648 /* EntryCell.swift */,
+				BA90BA4C1A5286C80090989C /* NewPostView.swift */,
+				BA90BA521A5288930090989C /* NewPost.xib */,
 				BA29BE221A44E02A003B55D9 /* Main.storyboard */,
 				BA29BE251A44E02A003B55D9 /* Images.xcassets */,
 				BA29BE271A44E02A003B55D9 /* LaunchScreen.xib */,
 				BA29BE1C1A44E02A003B55D9 /* Supporting Files */,
+				BA405E201A56450F00027F32 /* PostDropDown.swift */,
+				BA405E191A5644EF00027F32 /* PostDropDown.xib */,
+				BA71E26A1A54410F006AD99A /* FeedLinkCard.swift */,
+				BA71E26C1A544123006AD99A /* FeedLinkCard.xib */,
+				BA405E281A56E31700027F32 /* FeedTextCard.swift */,
+				BA405E2B1A56E32A00027F32 /* FeedTextCard.xib */,
+				BA5D80C71A5AEF2000581E01 /* Post.swift */,
+				BA4F504E1A5C2BDB003A34AC /* Comment.swift */,
+				BA5D80CA1A5AF60700581E01 /* FullPostView.swift */,
+				BAEFDDF71A5BF8E2006BC13B /* FullPostView.xib */,
+				BA8E25151A5C315D00FBBC40 /* NewComment.swift */,
+				BA8E25171A5C316900FBBC40 /* NewComment.xib */,
 			);
 			path = Haggle;
 			sourceTree = "<group>";
@@ -214,11 +315,17 @@
 		BA29BE1C1A44E02A003B55D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BA2DB4B51A4F17EE0024F40E /* icomoon.ttf */,
+				BA8E251C1A5CE13B00FBBC40 /* DINPro-Light.ttf */,
+				BA8E25191A5C3ECD00FBBC40 /* DINPro-Bold.otf */,
+				BA405E251A564F8400027F32 /* icomoon.ttf */,
+				BA7EE2B81A55874E0003A061 /* DINPro-Medium.otf */,
+				BA7EE2B01A5586A30003A061 /* DINPro-Regular.otf */,
+				BA2DB4C31A526D3B0024F40E /* business-box-in-7.png */,
+				BA2DB4C11A526CFC0024F40E /* list-simple-7.png */,
 				BA574E671A47CD200019ABEA /* BemboStd.otf */,
-				BA574E641A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf */,
-				BA574E611A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf */,
 				BA29BE1D1A44E02A003B55D9 /* Info.plist */,
+				BA65B5581A5D34C8000EA01C /* readerA.html */,
+				BA65B55F1A5D3A2F000EA01C /* readerO.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -313,6 +420,7 @@
 			);
 			dependencies = (
 				BAB60F921A4563D100786F74 /* PBXTargetDependency */,
+				BA2446561A5399F200CFECBC /* PBXTargetDependency */,
 			);
 			name = Haggle;
 			productName = Haggle;
@@ -407,6 +515,10 @@
 					ProductGroup = BAB60FAF1A46147400786F74 /* Products */;
 					ProjectRef = BAB60FAE1A46147400786F74 /* Dollar.xcodeproj */;
 				},
+				{
+					ProductGroup = BA24464B1A5399DB00CFECBC /* Products */;
+					ProjectRef = BA24464A1A5399DB00CFECBC /* Snappy.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -418,6 +530,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		BA2446501A5399DB00CFECBC /* Snappy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Snappy.framework;
+			remoteRef = BA24464F1A5399DB00CFECBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA2446521A5399DB00CFECBC /* SnappyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SnappyTests.xctest;
+			remoteRef = BA2446511A5399DB00CFECBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		BAB60FA21A46144F00786F74 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -453,13 +579,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA574E621A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf in Resources */,
-				BA2DB4B61A4F17EE0024F40E /* icomoon.ttf in Resources */,
-				BA574E651A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf in Resources */,
+				BA65B5601A5D3A2F000EA01C /* readerO.html in Resources */,
+				BA8E25181A5C316900FBBC40 /* NewComment.xib in Resources */,
+				BA8E251A1A5C3ECD00FBBC40 /* DINPro-Bold.otf in Resources */,
+				BA405E2C1A56E32A00027F32 /* FeedTextCard.xib in Resources */,
+				BA71E26D1A544123006AD99A /* FeedLinkCard.xib in Resources */,
+				BAEFDDF81A5BF8E2006BC13B /* FullPostView.xib in Resources */,
+				BA65B5591A5D34C8000EA01C /* readerA.html in Resources */,
+				BA405E1A1A5644EF00027F32 /* PostDropDown.xib in Resources */,
+				BA7EE2B91A55874E0003A061 /* DINPro-Medium.otf in Resources */,
+				BA2DB4C21A526CFC0024F40E /* list-simple-7.png in Resources */,
 				BAFDE1831A46B48800585AF8 /* Main.storyboard in Resources */,
 				BA29BE291A44E02A003B55D9 /* LaunchScreen.xib in Resources */,
 				BA29BE261A44E02A003B55D9 /* Images.xcassets in Resources */,
+				BA8E251D1A5CE13B00FBBC40 /* DINPro-Light.ttf in Resources */,
+				BA405E261A564F8400027F32 /* icomoon.ttf in Resources */,
 				BA574E681A47CD200019ABEA /* BemboStd.otf in Resources */,
+				BA90BA531A5288930090989C /* NewPost.xib in Resources */,
+				BA7EE2B11A5586A30003A061 /* DINPro-Regular.otf in Resources */,
+				BA2DB4C41A526D3B0024F40E /* business-box-in-7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,10 +612,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA2DB4B71A4F17EE0024F40E /* icomoon.ttf in Resources */,
-				BA574E631A47CB5C0019ABEA /* AkzidenzGrotesk-Bold.otf in Resources */,
+				BA8E251B1A5C3ECD00FBBC40 /* DINPro-Bold.otf in Resources */,
+				BA405E2D1A56E32A00027F32 /* FeedTextCard.xib in Resources */,
 				BAB60F901A4563D100786F74 /* MainInterface.storyboard in Resources */,
-				BA574E661A47CB700019ABEA /* AkzidenzGrotesk-Medium.otf in Resources */,
+				BA405E271A564F8400027F32 /* icomoon.ttf in Resources */,
+				BA7EE2B21A5586A30003A061 /* DINPro-Regular.otf in Resources */,
+				BA8E251E1A5CE13B00FBBC40 /* DINPro-Light.ttf in Resources */,
+				BA7EE2BA1A55874E0003A061 /* DINPro-Medium.otf in Resources */,
 				BA574E691A47CD200019ABEA /* BemboStd.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,13 +630,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA405E211A56450F00027F32 /* PostDropDown.swift in Sources */,
+				BA90BA4D1A5286C80090989C /* NewPostView.swift in Sources */,
+				BA71E26B1A54410F006AD99A /* FeedLinkCard.swift in Sources */,
 				BA29BE211A44E02A003B55D9 /* ItemController.swift in Sources */,
 				BAD9FE331A45170E00515648 /* EntryCell.swift in Sources */,
+				BA5D80C81A5AEF2000581E01 /* Post.swift in Sources */,
 				BABC2C801A451D8600DE1BE2 /* Config.swift in Sources */,
 				BA29BE1F1A44E02A003B55D9 /* AppDelegate.swift in Sources */,
 				BA2DB4C01A51D4C30024F40E /* InboxController.swift in Sources */,
+				BA5D80CB1A5AF60700581E01 /* FullPostView.swift in Sources */,
 				BABC2C7E1A451D7C00DE1BE2 /* Utils.swift in Sources */,
+				BA4F504F1A5C2BDB003A34AC /* Comment.swift in Sources */,
+				BA71E26F1A544395006AD99A /* PostCell.swift in Sources */,
 				BAB60F831A455A8900786F74 /* UIColorExtension.swift in Sources */,
+				BA8E25161A5C315D00FBBC40 /* NewComment.swift in Sources */,
+				BA405E291A56E31700027F32 /* FeedTextCard.swift in Sources */,
 				BA2DB4BD1A51D4B40024F40E /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,10 +663,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2AE3E21A46995A00E2A05D /* UIColoredButton.swift in Sources */,
+				BA405E2A1A56E31700027F32 /* FeedTextCard.swift in Sources */,
 				BA2AE3DD1A46739300E2A05D /* Item.swift in Sources */,
+				BA5D80C91A5AF1DC00581E01 /* Post.swift in Sources */,
 				BAB60F8E1A4563D100786F74 /* ShareViewController.swift in Sources */,
 				BA2AE3E01A467CD000E2A05D /* Config.swift in Sources */,
 				BA2AE3DE1A467CC400E2A05D /* Utils.swift in Sources */,
+				BA8E250F1A5C2C5200FBBC40 /* Comment.swift in Sources */,
 				BA2AE3DF1A467CCA00E2A05D /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +677,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BA2446561A5399F200CFECBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Snappy;
+			targetProxy = BA2446551A5399F200CFECBC /* PBXContainerItemProxy */;
+		};
 		BA29BE301A44E02A003B55D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BA29BE181A44E02A003B55D9 /* Haggle */;

@@ -21,6 +21,7 @@ func genTitleLabel(title: String, inCellWidth cellWidth: CGFloat) -> UILabel {
     titleLabel.numberOfLines = 0
     titleLabel.lineBreakMode = .ByWordWrapping
     titleLabel.font = UIFont(name: "AkzidenzGroteskBQ-Bold", size: 21)
+    
     titleLabel.frame = CGRectMake(0, 0, cellWidth - (lrMargin*2) - 25, CGFloat.max)
     titleLabel.sizeToFit()
     titleLabel.frame.origin = CGPointMake(lPadding, tpadding)
@@ -82,7 +83,7 @@ class EntryCell: UITableViewCell {
     |--------------------------------------------------------------------------
     */
 
-    func render(title: String, providerDisplay: String, providerName: String, favicon: String) {
+    func render(title: String, providerDisplay: String, providerName: String, favicon: String?) {
         
         if card != nil {
             card.removeFromSuperview()
@@ -93,16 +94,16 @@ class EntryCell: UITableViewCell {
         }
         
         /* CARD */
-        card = UIView(frame: CGRectMake(lrMargin, tbMargin, frame.size.width - (lrMargin*2), 0))
+        card = UIView(frame: CGRectMake(lrMargin, tbMargin, Utils.screenSize.width - (lrMargin*2), 0))
         card.backgroundColor = UIColor.whiteColor()
         card.layer.cornerRadius = 2
         
         /* CARD TITLE */
-        let titleLabel = genTitleLabel(title, inCellWidth: frame.size.width)
+        let titleLabel = genTitleLabel(title, inCellWidth: Utils.screenSize.width)
         card.addSubview(titleLabel)
         
         /* CARD SOURCE */
-        let sourceLabel = genSourceLabel(providerName, inCellWidth: frame.size.width)
+        let sourceLabel = genSourceLabel(providerName, inCellWidth: Utils.screenSize.width)
         sourceLabel.frame.origin = CGPointMake(lPadding, titleLabel.frame.size.height + titleLabel.frame.origin.y + middleSpacing)
         card.addSubview(sourceLabel)
         

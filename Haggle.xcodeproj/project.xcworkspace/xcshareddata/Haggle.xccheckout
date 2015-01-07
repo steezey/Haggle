@@ -10,6 +10,8 @@
 	<string>Haggle</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>3AF18F9C6F5D633BAA0B3F935459E0C777C82047</key>
+		<string>https://github.com/Masonry/Snappy.git</string>
 		<key>4E2F5E824C021282D3F5789E108FCDC580F66A19</key>
 		<string>https://github.com/ankurp/Dollar.swift.git</string>
 		<key>BC98AE13211CEA1FA38577E9D80C7F70FDB05893</key>
@@ -19,6 +21,8 @@
 	<string>Haggle.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>3AF18F9C6F5D633BAA0B3F935459E0C777C82047</key>
+		<string>../../Snappy</string>
 		<key>4E2F5E824C021282D3F5789E108FCDC580F66A19</key>
 		<string>../..Dollar.swift</string>
 		<key>BC98AE13211CEA1FA38577E9D80C7F70FDB05893</key>
@@ -47,6 +51,14 @@
 			<string>4E2F5E824C021282D3F5789E108FCDC580F66A19</string>
 			<key>IDESourceControlWCCName</key>
 			<string>HaggleDollar.swift</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3AF18F9C6F5D633BAA0B3F935459E0C777C82047</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Snappy</string>
 		</dict>
 	</array>
 </dict>
